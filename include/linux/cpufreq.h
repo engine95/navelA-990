@@ -402,8 +402,9 @@ extern struct cpufreq_governor cpufreq_gov_lionheart;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_TRIPNDROID)
 extern struct cpufreq_governor cpufreq_gov_tripndroid;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_tripndroid)
-
-
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_ZZMOOVE)
+extern struct cpufreq_governor cpufreq_gov_zzmoove;
+#define CPUFREQ_DEFAULT_GOVERNOR       (&cpufreq_gov_zzmoove)
 #endif
 
 /*********************************************************************
